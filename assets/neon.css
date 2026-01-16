@@ -1,0 +1,89 @@
+/* Credit: https://css-tricks.com/how-to-create-neon-text-with-css/ */
+
+.neontext {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #d161a2,
+      0 0 42px #d161a2,
+      0 0 82px #d161a2,
+      0 0 92px #d161a2,
+      0 0 102px #d161a2,
+      0 0 125px #d161a2;
+  }
+
+
+/* Additional styling */
+  
+body {
+  font-size: 1rem;
+  background-color: #000;
+}  
+
+h1 {
+  font-family: "Neonderthaw", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: "Tilt Neon", serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+h3 {
+  font-family: "Neonderthaw", serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.pulsate {
+     animation: pulsate 2s infinite alternate;     
+}
+
+@keyframes pulsate {
+    
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #d161a2,
+      0 0 40px #d161a2,
+      0 0 80px #d161a2,
+      0 0 90px #d161a2,
+      0 0 100px #d161a2,
+      0 0 120px #d161a2;
+  
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px #d161a2,
+    0 0 10px #d161a2,
+    0 0 45px #d161a2,
+    0 0 55px #d161a2,
+    0 0 70px #d161a2,
+    0 0 80px #d161a2;
+
+}
+
